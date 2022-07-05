@@ -1,12 +1,10 @@
 body {
     height: 100vh;
     margin: 0;
-    overflow: hidden;
     font-family: Roboto, sans-serif;
 
     display: flex;
     flex-direction: column;
-
     overflow: auto;
 }
 
@@ -60,16 +58,18 @@ a {
     max-width: 50%;
 }
 
-
-.left button {
-    border-color: #3882F6;
+button {
     background-color: #3882F6;
     color: white;
-    align-self: flex-start;
     border-radius: 5px;
     padding: 5px 20px;
     font-weight: 700;
     font-size: 16px;
+    border-color: white;
+}
+.left button {
+    border-color: #3882F6;
+    align-self: flex-start;
 }
 
 .left p {
@@ -131,4 +131,42 @@ a {
     font-weight: 600;
     text-align: right;
     margin-top: 10px;
+}
+
+.box {
+    margin-top: 75px;
+    margin-bottom: 75px;
+    background: #3882F6;
+    border-radius: 5px;
+    display: flex;
+    padding: 50px 80px;
+    justify-content: space-between;
+    align-content: center;
+    gap: 25px;
+}
+
+.box .title {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+} 
+
+.box .info {
+    font-size: 16px;
+    color: #E5E7EB;
+}
+
+.box .right {
+    align-self: flex-end;
+}
+
+.fifth {
+    background: #1F2937;
+    font-size: 16px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
